@@ -136,7 +136,10 @@ def main(
     # Build and simulate the accurate array multiplier
     print(f"Building {nbits}-bit array multiplier...")
     net = build_array_multiplier(nbits)
-    output_dir = os.path.join("tmp")
+    # Drop the accurate reference Verilog (Mult_<nbits>_<nbits>.v) next to the
+    # caller-supplied out_verilog so all artifacts land in the same folder;
+    # fall back to tmp/ for callers that don't pass out_verilog.
+    output_dir = (os.path.dirname(out_verilog) if out_verilog else "") or "tmp"
     os.makedirs(output_dir, exist_ok=True)
     dot_file = os.path.join(output_dir, f"Mult_{nbits}_{nbits}.dot")
     output_png = os.path.join(output_dir, f"Mult_{nbits}_{nbits}_2dgrid.png")

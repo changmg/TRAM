@@ -163,24 +163,13 @@ cython_debug/
 
 # dataset
 *.zip
+data/
 
 # trained models
 state_dicts/
 ckpt/
 ckpt2/
 *.pth
-
-# temporary files
-tmp/
-tmp2/
-tmp3/
-tmp4/
-tmp5/
-tmp7/
-tmp7*/
-tmp9/
-tmp9*/
-tmp*/
 
 # vscode settings
 .vscode/
@@ -191,35 +180,8 @@ abc.history
 # executables
 *.out
 
-# EDA toolchains
-systolic_array/docs
-systolic_array/drc
-systolic_array/lvs
-systolic_array/PDK_DIR
-systolic_array/pex
-systolic_array/.cdsenv
-systolic_array/.cdsinit
-systolic_array/.edadk_install*
-systolic_array/.remove_locks.sh
-systolic_array/Calibre_Usage*
-systolic_array/display.drf
-systolic_array/LICENSE
-systolic_array/rve_vis_asap7.cto
-systolic_array/*.log
-systolic_array/syn/*.log
-systolic_array/syn/.nfs*
-simv.daidir/
-csrc/
-saif/
-alib-52/
-default.svf
-*.db
-*.lib
-*.7z
-*.key
-*.vcd
-simv
-edadk.conf
-
 # excel temp files
 ~$*
+
+# misc
+tmp/

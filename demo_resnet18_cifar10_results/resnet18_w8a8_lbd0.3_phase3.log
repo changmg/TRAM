@@ -1,0 +1,501 @@
+2026-05-06 23:35:11,726 - Namespace(seed=1005, pretrained_weights='/home/chang/Work/Prev/TRAM-public/demo_resnet18_cifar10_results/resnet18_w8a8_lbd0.3_phase1.pth', num_workers=16, channel_wise=True, nbits_w=8, nbits_a=8, lut_file_name='/home/chang/Work/Prev/TRAM-public/demo_resnet18_cifar10_results/resnet18_w8a8_lbd0.3.lut.txt', num_samples=1024, lr=0.0005, momentum=0.9, weight_decay=0.0005, epochs=10, batch_size=256, lambd=1.0, log='/home/chang/Work/Prev/TRAM-public/demo_resnet18_cifar10_results/resnet18_w8a8_lbd0.3_phase3.log')
+2026-05-06 23:35:11,727 - date_time: 20260506_233511
+2026-05-06 23:35:11,728 - loading dataset from ./data/cifar10/...
+2026-05-06 23:35:15,084 - quantization paramaters for weights: {'n_bits': 8, 'channel_wise': True}
+2026-05-06 23:35:15,084 - quantization paramaters for activations: {'n_bits': 8, 'channel_wise': False}
+2026-05-06 23:35:15,128 - Max discard cols: 8, Initial discard cols: 4
+2026-05-06 23:35:15,135 - adding homogeneous indicators to layer_id = 0: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 1: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 2: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 3: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 4: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 5: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 6: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 7: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 8: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 9: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 10: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 11: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 12: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 13: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 14: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 15: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 16: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 17: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 18: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 19: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,136 - adding homogeneous indicators to layer_id = 20: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7f9e43729c70
+2026-05-06 23:35:15,600 - layer_id = 0, H_in = 32, W_in = 32, C_in = 3, K_h = 3, K_w = 3, C_out = 64, H_out = 32, W_out = 32, #MACs = 1769472
+2026-05-06 23:35:15,645 - layer_id = 1, H_in = 16, W_in = 16, C_in = 64, K_h = 3, K_w = 3, C_out = 64, H_out = 16, W_out = 16, #MACs = 9437184
+2026-05-06 23:35:15,652 - layer_id = 2, H_in = 16, W_in = 16, C_in = 64, K_h = 3, K_w = 3, C_out = 64, H_out = 16, W_out = 16, #MACs = 9437184
+2026-05-06 23:35:15,655 - layer_id = 3, H_in = 16, W_in = 16, C_in = 64, K_h = 3, K_w = 3, C_out = 64, H_out = 16, W_out = 16, #MACs = 9437184
+2026-05-06 23:35:15,659 - layer_id = 4, H_in = 16, W_in = 16, C_in = 64, K_h = 3, K_w = 3, C_out = 64, H_out = 16, W_out = 16, #MACs = 9437184
+2026-05-06 23:35:15,731 - layer_id = 5, H_in = 16, W_in = 16, C_in = 64, K_h = 3, K_w = 3, C_out = 128, H_out = 8, W_out = 8, #MACs = 4718592
+2026-05-06 23:35:15,750 - layer_id = 6, H_in = 8, W_in = 8, C_in = 128, K_h = 3, K_w = 3, C_out = 128, H_out = 8, W_out = 8, #MACs = 9437184
+2026-05-06 23:35:15,765 - layer_id = 7, H_in = 16, W_in = 16, C_in = 64, K_h = 1, K_w = 1, C_out = 128, H_out = 8, W_out = 8, #MACs = 524288
+2026-05-06 23:35:15,774 - layer_id = 8, H_in = 8, W_in = 8, C_in = 128, K_h = 3, K_w = 3, C_out = 128, H_out = 8, W_out = 8, #MACs = 9437184
+2026-05-06 23:35:15,778 - layer_id = 9, H_in = 8, W_in = 8, C_in = 128, K_h = 3, K_w = 3, C_out = 128, H_out = 8, W_out = 8, #MACs = 9437184
+2026-05-06 23:35:15,789 - layer_id = 10, H_in = 8, W_in = 8, C_in = 128, K_h = 3, K_w = 3, C_out = 256, H_out = 4, W_out = 4, #MACs = 4718592
+2026-05-06 23:35:15,819 - layer_id = 11, H_in = 4, W_in = 4, C_in = 256, K_h = 3, K_w = 3, C_out = 256, H_out = 4, W_out = 4, #MACs = 9437184
+2026-05-06 23:35:15,833 - layer_id = 12, H_in = 8, W_in = 8, C_in = 128, K_h = 1, K_w = 1, C_out = 256, H_out = 4, W_out = 4, #MACs = 524288
+2026-05-06 23:35:15,841 - layer_id = 13, H_in = 4, W_in = 4, C_in = 256, K_h = 3, K_w = 3, C_out = 256, H_out = 4, W_out = 4, #MACs = 9437184
+2026-05-06 23:35:15,845 - layer_id = 14, H_in = 4, W_in = 4, C_in = 256, K_h = 3, K_w = 3, C_out = 256, H_out = 4, W_out = 4, #MACs = 9437184
+2026-05-06 23:35:15,871 - layer_id = 15, H_in = 4, W_in = 4, C_in = 256, K_h = 3, K_w = 3, C_out = 512, H_out = 2, W_out = 2, #MACs = 4718592
+2026-05-06 23:35:15,878 - layer_id = 16, H_in = 2, W_in = 2, C_in = 512, K_h = 3, K_w = 3, C_out = 512, H_out = 2, W_out = 2, #MACs = 9437184
+2026-05-06 23:35:15,892 - layer_id = 17, H_in = 4, W_in = 4, C_in = 256, K_h = 1, K_w = 1, C_out = 512, H_out = 2, W_out = 2, #MACs = 524288
+2026-05-06 23:35:15,896 - layer_id = 18, H_in = 2, W_in = 2, C_in = 512, K_h = 3, K_w = 3, C_out = 512, H_out = 2, W_out = 2, #MACs = 9437184
+2026-05-06 23:35:15,900 - layer_id = 19, H_in = 2, W_in = 2, C_in = 512, K_h = 3, K_w = 3, C_out = 512, H_out = 2, W_out = 2, #MACs = 9437184
+2026-05-06 23:35:15,930 - layer_id = 20, in_features = 512, out_features = 10, #MACs = 5120
+2026-05-06 23:35:15,930 - Total MACs: 140186624
+2026-05-06 23:35:30,746 - Initializing hardware cost for layer_id = 0: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,746 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,746 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,746 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,746 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,746 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,746 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,746 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,746 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,746 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,746 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,746 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,746 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,747 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,747 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,747 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,747 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,748 - Initializing hardware cost for layer_id = 1: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,748 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,748 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,748 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,748 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,748 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,748 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,748 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,748 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,748 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,748 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,748 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,748 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,748 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,748 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,748 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,748 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,749 - Initializing hardware cost for layer_id = 2: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,749 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,749 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,749 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,749 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,749 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,749 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,749 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,749 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,749 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,749 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,749 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,749 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,749 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,749 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,749 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,749 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,750 - Initializing hardware cost for layer_id = 3: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,750 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,750 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,750 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,750 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,750 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,750 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,750 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,750 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,750 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,750 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,750 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,750 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,750 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,750 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,750 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,750 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,751 - Initializing hardware cost for layer_id = 4: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,751 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,751 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,751 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,751 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,751 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,751 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,751 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,751 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,751 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,751 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,751 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,751 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,751 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,751 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,751 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,751 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,752 - Initializing hardware cost for layer_id = 5: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,752 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,752 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,752 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,752 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,752 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,752 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,752 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,752 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,752 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,752 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,752 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,752 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,752 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,752 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,752 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,752 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,753 - Initializing hardware cost for layer_id = 6: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,753 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,753 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,753 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,753 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,753 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,753 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,753 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,753 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,753 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,753 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,753 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,753 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,753 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,753 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,753 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,753 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,754 - Initializing hardware cost for layer_id = 7: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,754 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,754 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,754 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,754 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,754 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,754 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,754 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,754 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,754 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,754 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,754 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,754 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,754 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,754 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,754 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,754 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,755 - Initializing hardware cost for layer_id = 8: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,755 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,755 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,755 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,755 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,755 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,755 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,755 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,755 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,755 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,755 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,755 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,755 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,755 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,755 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,755 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,755 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,755 - Initializing hardware cost for layer_id = 9: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,756 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,756 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,756 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,756 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,756 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,756 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,756 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,756 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,756 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,756 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,756 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,756 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,756 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,756 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,756 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,756 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,756 - Initializing hardware cost for layer_id = 10: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,756 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,756 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,756 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,756 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,756 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,756 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,756 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,756 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,756 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,756 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,756 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,756 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,756 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,756 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,756 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,756 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,757 - Initializing hardware cost for layer_id = 11: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,757 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,757 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,757 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,757 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,757 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,757 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,757 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,757 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,757 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,757 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,757 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,757 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,757 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,757 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,757 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,757 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,758 - Initializing hardware cost for layer_id = 12: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,758 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,758 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,758 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,758 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,758 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,758 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,758 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,758 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,758 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,758 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,758 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,758 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,758 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,758 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,758 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,758 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,759 - Initializing hardware cost for layer_id = 13: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,759 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,759 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,759 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,759 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,759 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,759 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,759 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,759 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,759 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,759 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,759 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,759 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,759 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,759 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,759 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,759 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,760 - Initializing hardware cost for layer_id = 14: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,760 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,760 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,760 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,760 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,760 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,760 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,760 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,760 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,760 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,760 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,760 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,760 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,760 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,760 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,760 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,760 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,761 - Initializing hardware cost for layer_id = 15: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,761 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,761 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,761 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,761 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,761 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,761 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,761 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,761 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,761 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,761 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,761 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,761 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,761 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,761 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,761 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,761 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,762 - Initializing hardware cost for layer_id = 16: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,762 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,762 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,762 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,762 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,762 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,762 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,762 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,762 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,762 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,762 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,762 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,762 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,762 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,762 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,762 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,762 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,763 - Initializing hardware cost for layer_id = 17: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,763 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,763 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,763 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,763 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,763 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,763 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,763 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,763 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,763 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,763 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,763 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,763 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,763 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,763 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,763 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,763 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,764 - Initializing hardware cost for layer_id = 18: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,764 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,764 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,764 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,764 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,764 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,764 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,764 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,764 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,764 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,764 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,764 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,764 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,764 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,764 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,764 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,764 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,765 - Initializing hardware cost for layer_id = 19: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,765 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,765 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,765 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,765 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,765 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,765 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,765 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,765 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,765 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,765 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,765 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,765 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,765 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,765 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,765 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,765 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,766 - Initializing hardware cost for layer_id = 20: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:35:30,766 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:35:30,766 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:35:30,766 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:35:30,766 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:35:30,766 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:35:30,766 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:35:30,766 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:35:30,766 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:35:30,766 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:35:30,766 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:35:30,766 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:35:30,766 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:35:30,766 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:35:30,766 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:35:30,766 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:35:30,766 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:35:30,767 - q_model (after phase 1): (acc@1, loss1, loss2, total_loss) = (0.911799967288971, 0.3285140097141266, 0.8328676819801331, 1.1613816916942596)
+2026-05-06 23:35:30,767 - optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    initial_lr: 0.0005
+    lr: 0.0005
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0.0005
+)
+2026-05-06 23:35:30,768 - scheduler: <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x7f9e45ea9ad0>
+2026-05-06 23:35:30,768 - AppTrain Epoch 0: Learning rate: 0.0005
+2026-05-06 23:35:58,883 - Train Epoch 0: [12800/50000]	loss1: 0.02102423459291458	loss2: 0.8328676819801331	loss: 0.853891909122467
+2026-05-06 23:36:26,870 - Train Epoch 0: [25600/50000]	loss1: 0.039653945714235306	loss2: 0.8328676819801331	loss: 0.8725216388702393
+2026-05-06 23:36:54,629 - Train Epoch 0: [38400/50000]	loss1: 0.034467507153749466	loss2: 0.8328676819801331	loss: 0.8673352003097534
+2026-05-06 23:37:19,945 - Train Epoch 0: [50000/50000]	loss1: 0.02353600598871708	loss2: 0.8328676819801331	loss: 0.8564037084579468
+2026-05-06 23:37:34,576 - (acc@1, loss1, loss2, total_loss) = (0.9187999963760376, 0.3073258101940155, 0.8328676819801331, 1.1401934921741486)
+2026-05-06 23:37:34,576 - Elapsed 123.81s, 123.81 s/epoch, 0.63 s/batch, ets 1114.28s
+
+2026-05-06 23:37:34,576 - AppTrain Epoch 1: Learning rate: 0.0004877641290737884
+2026-05-06 23:38:02,540 - Train Epoch 1: [12800/50000]	loss1: 0.03376469388604164	loss2: 0.8328676819801331	loss: 0.8666324019432068
+2026-05-06 23:38:31,272 - Train Epoch 1: [25600/50000]	loss1: 0.06224711239337921	loss2: 0.8328676819801331	loss: 0.8951147794723511
+2026-05-06 23:38:59,708 - Train Epoch 1: [38400/50000]	loss1: 0.026461375877261162	loss2: 0.8328676819801331	loss: 0.8593290448188782
+2026-05-06 23:39:25,486 - Train Epoch 1: [50000/50000]	loss1: 0.07933469861745834	loss2: 0.8328676819801331	loss: 0.9122023582458496
+2026-05-06 23:39:40,585 - (acc@1, loss1, loss2, total_loss) = (0.9179999828338623, 0.322774738073349, 0.8328676819801331, 1.155642420053482)
+2026-05-06 23:39:40,586 - Elapsed 249.82s, 124.91 s/epoch, 0.64 s/batch, ets 999.27s
+
+2026-05-06 23:39:40,586 - AppTrain Epoch 2: Learning rate: 0.0004522542485937368
+2026-05-06 23:40:08,280 - Train Epoch 2: [12800/50000]	loss1: 0.0332530178129673	loss2: 0.8328676819801331	loss: 0.8661206960678101
+2026-05-06 23:40:36,020 - Train Epoch 2: [25600/50000]	loss1: 0.027184655889868736	loss2: 0.8328676819801331	loss: 0.8600523471832275
+2026-05-06 23:41:03,346 - Train Epoch 2: [38400/50000]	loss1: 0.030519982799887657	loss2: 0.8328676819801331	loss: 0.8633876442909241
+2026-05-06 23:41:28,076 - Train Epoch 2: [50000/50000]	loss1: 0.050371281802654266	loss2: 0.8328676819801331	loss: 0.8832389712333679
+2026-05-06 23:41:42,821 - (acc@1, loss1, loss2, total_loss) = (0.9217999577522278, 0.29980382323265076, 0.8328676819801331, 1.1326715052127838)
+2026-05-06 23:41:42,821 - Elapsed 372.05s, 124.02 s/epoch, 0.63 s/batch, ets 868.13s
+
+2026-05-06 23:41:42,821 - AppTrain Epoch 3: Learning rate: 0.0003969463130731183
+2026-05-06 23:42:10,442 - Train Epoch 3: [12800/50000]	loss1: 0.025493212044239044	loss2: 0.8328676819801331	loss: 0.8583608865737915
+2026-05-06 23:42:37,987 - Train Epoch 3: [25600/50000]	loss1: 0.04021086171269417	loss2: 0.8328676819801331	loss: 0.8730785250663757
+2026-05-06 23:43:05,613 - Train Epoch 3: [38400/50000]	loss1: 0.03773670271039009	loss2: 0.8328676819801331	loss: 0.870604395866394
+2026-05-06 23:43:30,261 - Train Epoch 3: [50000/50000]	loss1: 0.09730179607868195	loss2: 0.8328676819801331	loss: 0.9301694631576538
+2026-05-06 23:43:45,083 - (acc@1, loss1, loss2, total_loss) = (0.9250999689102173, 0.2934429347515106, 0.8328676819801331, 1.1263106167316437)
+2026-05-06 23:43:45,083 - Elapsed 494.32s, 123.58 s/epoch, 0.63 s/batch, ets 741.47s
+
+2026-05-06 23:43:45,083 - AppTrain Epoch 4: Learning rate: 0.00032725424859373687
+2026-05-06 23:44:12,108 - Train Epoch 4: [12800/50000]	loss1: 0.01790907420217991	loss2: 0.8328676819801331	loss: 0.850776731967926
+2026-05-06 23:44:39,393 - Train Epoch 4: [25600/50000]	loss1: 0.020765520632267	loss2: 0.8328676819801331	loss: 0.8536332249641418
+2026-05-06 23:45:06,615 - Train Epoch 4: [38400/50000]	loss1: 0.02642086148262024	loss2: 0.8328676819801331	loss: 0.8592885732650757
+2026-05-06 23:45:31,345 - Train Epoch 4: [50000/50000]	loss1: 0.025052016600966454	loss2: 0.8328676819801331	loss: 0.8579196929931641
+2026-05-06 23:45:46,203 - (acc@1, loss1, loss2, total_loss) = (0.92249995470047, 0.3038724958896637, 0.8328676819801331, 1.1367401778697968)
+2026-05-06 23:45:46,204 - Elapsed 615.44s, 123.09 s/epoch, 0.63 s/batch, ets 615.44s
+
+2026-05-06 23:45:46,204 - AppTrain Epoch 5: Learning rate: 0.00025
+2026-05-06 23:46:14,856 - Train Epoch 5: [12800/50000]	loss1: 0.015317491255700588	loss2: 0.8328676819801331	loss: 0.8481851816177368
+2026-05-06 23:46:42,103 - Train Epoch 5: [25600/50000]	loss1: 0.010248074308037758	loss2: 0.8328676819801331	loss: 0.8431157469749451
+2026-05-06 23:47:09,924 - Train Epoch 5: [38400/50000]	loss1: 0.018228353932499886	loss2: 0.8328676819801331	loss: 0.8510960340499878
+2026-05-06 23:47:35,517 - Train Epoch 5: [50000/50000]	loss1: 0.01905461773276329	loss2: 0.8328676819801331	loss: 0.8519222736358643
+2026-05-06 23:47:50,179 - (acc@1, loss1, loss2, total_loss) = (0.9284999966621399, 0.29185959696769714, 0.8328676819801331, 1.1247272789478302)
+2026-05-06 23:47:50,179 - Elapsed 739.41s, 123.24 s/epoch, 0.63 s/batch, ets 492.94s
+
+2026-05-06 23:47:50,179 - AppTrain Epoch 6: Learning rate: 0.00017274575140626317
+2026-05-06 23:48:18,249 - Train Epoch 6: [12800/50000]	loss1: 0.02108427695930004	loss2: 0.8328676819801331	loss: 0.8539519309997559
+2026-05-06 23:48:46,144 - Train Epoch 6: [25600/50000]	loss1: 0.010459518060088158	loss2: 0.8328676819801331	loss: 0.8433272242546082
+2026-05-06 23:49:14,299 - Train Epoch 6: [38400/50000]	loss1: 0.012008998543024063	loss2: 0.8328676819801331	loss: 0.8448767066001892
+2026-05-06 23:49:39,845 - Train Epoch 6: [50000/50000]	loss1: 0.018684430047869682	loss2: 0.8328676819801331	loss: 0.8515521287918091
+2026-05-06 23:49:54,458 - (acc@1, loss1, loss2, total_loss) = (0.9287999868392944, 0.2855668365955353, 0.8328676819801331, 1.1184345185756683)
+2026-05-06 23:49:54,458 - Elapsed 863.69s, 123.38 s/epoch, 0.63 s/batch, ets 370.15s
+
+2026-05-06 23:49:54,458 - AppTrain Epoch 7: Learning rate: 0.00010305368692688175
+2026-05-06 23:50:23,624 - Train Epoch 7: [12800/50000]	loss1: 0.029020704329013824	loss2: 0.8328676819801331	loss: 0.8618884086608887
+2026-05-06 23:50:51,701 - Train Epoch 7: [25600/50000]	loss1: 0.024767639115452766	loss2: 0.8328676819801331	loss: 0.8576353192329407
+2026-05-06 23:51:19,446 - Train Epoch 7: [38400/50000]	loss1: 0.012080379761755466	loss2: 0.8328676819801331	loss: 0.8449480533599854
+2026-05-06 23:51:43,528 - Train Epoch 7: [50000/50000]	loss1: 0.011636373586952686	loss2: 0.8328676819801331	loss: 0.8445040583610535
+2026-05-06 23:51:57,319 - (acc@1, loss1, loss2, total_loss) = (0.9297999739646912, 0.2814845144748688, 0.8328676819801331, 1.1143521964550018)
+2026-05-06 23:51:57,319 - Elapsed 986.55s, 123.32 s/epoch, 0.63 s/batch, ets 246.64s
+
+2026-05-06 23:51:57,319 - AppTrain Epoch 8: Learning rate: 4.774575140626317e-05
+2026-05-06 23:52:24,070 - Train Epoch 8: [12800/50000]	loss1: 0.013861150480806828	loss2: 0.8328676819801331	loss: 0.8467288613319397
+2026-05-06 23:52:50,565 - Train Epoch 8: [25600/50000]	loss1: 0.024906756356358528	loss2: 0.8328676819801331	loss: 0.8577744364738464
+2026-05-06 23:53:16,994 - Train Epoch 8: [38400/50000]	loss1: 0.012202111072838306	loss2: 0.8328676819801331	loss: 0.8450697660446167
+2026-05-06 23:53:41,188 - Train Epoch 8: [50000/50000]	loss1: 0.023956481367349625	loss2: 0.8328676819801331	loss: 0.8568241596221924
+2026-05-06 23:53:55,063 - (acc@1, loss1, loss2, total_loss) = (0.9304999709129333, 0.2819904088973999, 0.8328676819801331, 1.114858090877533)
+2026-05-06 23:53:55,063 - Elapsed 1104.30s, 122.70 s/epoch, 0.63 s/batch, ets 122.70s
+
+2026-05-06 23:53:55,063 - AppTrain Epoch 9: Learning rate: 1.2235870926211617e-05
+2026-05-06 23:54:21,923 - Train Epoch 9: [12800/50000]	loss1: 0.012906909920275211	loss2: 0.8328676819801331	loss: 0.8457745909690857
+2026-05-06 23:54:48,324 - Train Epoch 9: [25600/50000]	loss1: 0.018933763727545738	loss2: 0.8328676819801331	loss: 0.8518014550209045
+2026-05-06 23:55:14,664 - Train Epoch 9: [38400/50000]	loss1: 0.011869484558701515	loss2: 0.8328676819801331	loss: 0.84473717212677
+2026-05-06 23:55:38,530 - Train Epoch 9: [50000/50000]	loss1: 0.0111465435475111	loss2: 0.8328676819801331	loss: 0.8440142273902893
+2026-05-06 23:55:52,113 - (acc@1, loss1, loss2, total_loss) = (0.9302999973297119, 0.2814112603664398, 0.8328676819801331, 1.1142789423465729)
+2026-05-06 23:55:52,114 - Elapsed 1221.35s, 122.13 s/epoch, 0.62 s/batch, ets 0.00s
+

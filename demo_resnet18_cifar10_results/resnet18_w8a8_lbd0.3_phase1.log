@@ -1,0 +1,1194 @@
+2026-05-06 23:15:04,509 - Namespace(seed=1005, pretrained_weights='/home/chang/Work/Prev/TRAM-public/pretrained/cifar10_resnet18_w8a8_ptq.pth', num_workers=16, channel_wise=True, nbits_w=8, nbits_a=8, lr=0.0005, momentum=0.9, weight_decay=0.0005, epochs=10, batch_size=256, lambd=0.3, log='/home/chang/Work/Prev/TRAM-public/demo_resnet18_cifar10_results/resnet18_w8a8_lbd0.3_phase1.log')
+2026-05-06 23:15:04,510 - date_time: 20260506_231504
+2026-05-06 23:15:04,511 - loading dataset from ./data/cifar10/...
+2026-05-06 23:15:05,592 - quantization paramaters for weights: {'n_bits': 8, 'channel_wise': True}
+2026-05-06 23:15:05,593 - quantization paramaters for activations: {'n_bits': 8, 'channel_wise': False}
+2026-05-06 23:15:07,797 - q_model (loaded quantized): (acc@1, acc@5, loss) = (0.9309999942779541, 0.25261616706848145)
+2026-05-06 23:15:07,797 - Max discard cols: 8, Initial discard cols: 4
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 0: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 1: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 2: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 3: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 4: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 5: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 6: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 7: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 8: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 9: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 10: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 11: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 12: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 13: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 14: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 15: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 16: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 17: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 18: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 19: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:07,802 - adding homogeneous indicators to layer_id = 20: num_bits = 8, num_max_discard_cols = 8, address of self.gamma_free = 0x7967759dfcb0
+2026-05-06 23:15:08,157 - layer_id = 0, H_in = 32, W_in = 32, C_in = 3, K_h = 3, K_w = 3, C_out = 64, H_out = 32, W_out = 32, #MACs = 1769472
+2026-05-06 23:15:08,216 - layer_id = 1, H_in = 16, W_in = 16, C_in = 64, K_h = 3, K_w = 3, C_out = 64, H_out = 16, W_out = 16, #MACs = 9437184
+2026-05-06 23:15:08,244 - layer_id = 2, H_in = 16, W_in = 16, C_in = 64, K_h = 3, K_w = 3, C_out = 64, H_out = 16, W_out = 16, #MACs = 9437184
+2026-05-06 23:15:08,272 - layer_id = 3, H_in = 16, W_in = 16, C_in = 64, K_h = 3, K_w = 3, C_out = 64, H_out = 16, W_out = 16, #MACs = 9437184
+2026-05-06 23:15:08,302 - layer_id = 4, H_in = 16, W_in = 16, C_in = 64, K_h = 3, K_w = 3, C_out = 64, H_out = 16, W_out = 16, #MACs = 9437184
+2026-05-06 23:15:08,330 - layer_id = 5, H_in = 16, W_in = 16, C_in = 64, K_h = 3, K_w = 3, C_out = 128, H_out = 8, W_out = 8, #MACs = 4718592
+2026-05-06 23:15:08,347 - layer_id = 6, H_in = 8, W_in = 8, C_in = 128, K_h = 3, K_w = 3, C_out = 128, H_out = 8, W_out = 8, #MACs = 9437184
+2026-05-06 23:15:08,367 - layer_id = 7, H_in = 16, W_in = 16, C_in = 64, K_h = 1, K_w = 1, C_out = 128, H_out = 8, W_out = 8, #MACs = 524288
+2026-05-06 23:15:08,375 - layer_id = 8, H_in = 8, W_in = 8, C_in = 128, K_h = 3, K_w = 3, C_out = 128, H_out = 8, W_out = 8, #MACs = 9437184
+2026-05-06 23:15:08,394 - layer_id = 9, H_in = 8, W_in = 8, C_in = 128, K_h = 3, K_w = 3, C_out = 128, H_out = 8, W_out = 8, #MACs = 9437184
+2026-05-06 23:15:08,413 - layer_id = 10, H_in = 8, W_in = 8, C_in = 128, K_h = 3, K_w = 3, C_out = 256, H_out = 4, W_out = 4, #MACs = 4718592
+2026-05-06 23:15:08,426 - layer_id = 11, H_in = 4, W_in = 4, C_in = 256, K_h = 3, K_w = 3, C_out = 256, H_out = 4, W_out = 4, #MACs = 9437184
+2026-05-06 23:15:08,442 - layer_id = 12, H_in = 8, W_in = 8, C_in = 128, K_h = 1, K_w = 1, C_out = 256, H_out = 4, W_out = 4, #MACs = 524288
+2026-05-06 23:15:08,447 - layer_id = 13, H_in = 4, W_in = 4, C_in = 256, K_h = 3, K_w = 3, C_out = 256, H_out = 4, W_out = 4, #MACs = 9437184
+2026-05-06 23:15:08,464 - layer_id = 14, H_in = 4, W_in = 4, C_in = 256, K_h = 3, K_w = 3, C_out = 256, H_out = 4, W_out = 4, #MACs = 9437184
+2026-05-06 23:15:08,482 - layer_id = 15, H_in = 4, W_in = 4, C_in = 256, K_h = 3, K_w = 3, C_out = 512, H_out = 2, W_out = 2, #MACs = 4718592
+2026-05-06 23:15:08,494 - layer_id = 16, H_in = 2, W_in = 2, C_in = 512, K_h = 3, K_w = 3, C_out = 512, H_out = 2, W_out = 2, #MACs = 9437184
+2026-05-06 23:15:08,512 - layer_id = 17, H_in = 4, W_in = 4, C_in = 256, K_h = 1, K_w = 1, C_out = 512, H_out = 2, W_out = 2, #MACs = 524288
+2026-05-06 23:15:08,518 - layer_id = 18, H_in = 2, W_in = 2, C_in = 512, K_h = 3, K_w = 3, C_out = 512, H_out = 2, W_out = 2, #MACs = 9437184
+2026-05-06 23:15:08,538 - layer_id = 19, H_in = 2, W_in = 2, C_in = 512, K_h = 3, K_w = 3, C_out = 512, H_out = 2, W_out = 2, #MACs = 9437184
+2026-05-06 23:15:08,554 - layer_id = 20, in_features = 512, out_features = 10, #MACs = 5120
+2026-05-06 23:15:08,555 - Total MACs: 140186624
+2026-05-06 23:15:25,293 - Initializing hardware cost for layer_id = 0: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,293 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,293 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,293 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,293 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,293 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,293 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,293 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,293 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,293 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,293 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,293 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,293 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,293 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,293 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,293 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,294 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,294 - Layer 0: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,295 - layer_id =  0, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,295 - layer_id =  0, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,295 - Initializing hardware cost for layer_id = 1: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,295 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,295 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,295 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,295 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,295 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,295 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,295 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,295 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,295 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,295 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,295 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,295 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,295 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,296 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,296 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,296 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,296 - Layer 1: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,296 - layer_id =  1, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,296 - layer_id =  1, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,297 - Initializing hardware cost for layer_id = 2: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,297 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,297 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,297 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,297 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,297 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,297 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,297 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,297 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,297 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,297 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,297 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,297 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,297 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,297 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,297 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,297 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,297 - Layer 2: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,297 - layer_id =  2, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,298 - layer_id =  2, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,298 - Initializing hardware cost for layer_id = 3: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,298 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,298 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,298 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,298 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,298 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,298 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,298 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,298 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,298 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,298 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,298 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,298 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,298 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,298 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,298 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,298 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,299 - Layer 3: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,299 - layer_id =  3, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,299 - layer_id =  3, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,299 - Initializing hardware cost for layer_id = 4: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,299 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,299 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,299 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,299 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,299 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,299 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,299 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,299 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,299 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,299 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,299 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,299 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,299 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,299 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,299 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,299 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,300 - Layer 4: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,300 - layer_id =  4, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,301 - layer_id =  4, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,301 - Initializing hardware cost for layer_id = 5: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,301 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,301 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,301 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,301 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,301 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,301 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,301 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,301 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,301 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,301 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,301 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,301 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,301 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,301 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,301 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,301 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,301 - Layer 5: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,302 - layer_id =  5, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,302 - layer_id =  5, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,302 - Initializing hardware cost for layer_id = 6: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,302 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,302 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,302 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,302 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,302 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,302 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,302 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,302 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,302 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,302 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,302 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,302 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,302 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,302 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,302 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,302 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,303 - Layer 6: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,303 - layer_id =  6, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,304 - layer_id =  6, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,304 - Initializing hardware cost for layer_id = 7: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,304 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,304 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,304 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,304 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,304 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,304 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,304 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,304 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,304 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,304 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,304 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,304 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,304 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,304 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,304 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,304 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,304 - Layer 7: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,305 - layer_id =  7, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,305 - layer_id =  7, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,305 - Initializing hardware cost for layer_id = 8: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,305 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,305 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,305 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,305 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,305 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,305 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,305 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,305 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,305 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,305 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,305 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,305 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,305 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,305 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,305 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,305 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,306 - Layer 8: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,306 - layer_id =  8, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,306 - layer_id =  8, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,306 - Initializing hardware cost for layer_id = 9: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,306 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,306 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,306 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,306 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,306 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,306 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,306 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,306 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,306 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,306 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,306 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,306 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,307 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,307 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,307 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,307 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,307 - Layer 9: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,307 - layer_id =  9, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,308 - layer_id =  9, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,308 - Initializing hardware cost for layer_id = 10: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,308 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,308 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,308 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,308 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,308 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,308 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,308 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,308 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,308 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,308 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,308 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,308 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,308 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,308 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,308 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,308 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,308 - Layer 10: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,309 - layer_id = 10, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,309 - layer_id = 10, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,309 - Initializing hardware cost for layer_id = 11: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,309 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,309 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,309 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,309 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,309 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,309 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,309 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,309 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,309 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,309 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,309 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,309 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,309 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,309 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,309 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,309 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,309 - Layer 11: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,310 - layer_id = 11, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,310 - layer_id = 11, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,310 - Initializing hardware cost for layer_id = 12: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,310 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,310 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,310 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,310 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,310 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,310 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,310 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,310 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,310 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,310 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,310 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,310 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,310 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,310 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,310 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,310 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,311 - Layer 12: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,311 - layer_id = 12, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,311 - layer_id = 12, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,312 - Initializing hardware cost for layer_id = 13: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,312 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,312 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,312 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,312 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,312 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,312 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,312 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,312 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,312 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,312 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,312 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,312 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,312 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,312 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,312 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,312 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,312 - Layer 13: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,312 - layer_id = 13, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,313 - layer_id = 13, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,313 - Initializing hardware cost for layer_id = 14: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,313 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,313 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,313 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,313 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,313 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,313 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,313 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,313 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,313 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,313 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,313 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,313 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,313 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,313 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,313 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,313 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,313 - Layer 14: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,314 - layer_id = 14, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,314 - layer_id = 14, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,314 - Initializing hardware cost for layer_id = 15: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,314 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,314 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,314 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,314 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,314 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,314 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,314 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,314 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,314 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,314 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,314 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,314 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,314 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,314 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,314 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,314 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,315 - Layer 15: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,315 - layer_id = 15, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,315 - layer_id = 15, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,316 - Initializing hardware cost for layer_id = 16: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,316 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,316 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,316 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,316 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,316 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,316 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,316 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,316 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,316 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,316 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,316 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,316 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,316 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,316 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,316 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,316 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,316 - Layer 16: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,316 - layer_id = 16, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,317 - layer_id = 16, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,317 - Initializing hardware cost for layer_id = 17: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,317 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,317 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,317 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,317 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,317 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,317 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,317 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,317 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,317 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,317 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,317 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,317 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,317 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,317 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,317 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,317 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,317 - Layer 17: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,318 - layer_id = 17, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,318 - layer_id = 17, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,318 - Initializing hardware cost for layer_id = 18: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,318 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,318 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,318 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,318 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,318 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,318 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,318 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,318 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,318 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,318 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,319 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,319 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,319 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,319 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,319 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,319 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,319 - Layer 18: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,319 - layer_id = 18, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,319 - layer_id = 18, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,320 - Initializing hardware cost for layer_id = 19: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,320 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,320 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,320 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,320 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,320 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,320 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,320 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,320 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,320 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,320 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,320 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,320 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,320 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,320 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,320 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,320 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,320 - Layer 19: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,321 - layer_id = 19, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,321 - layer_id = 19, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,321 - Initializing hardware cost for layer_id = 20: C_and = 1.0, C_ha = 1.822, C_fa = 4.47
+2026-05-06 23:15:25,321 - col 0: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 0, col_cost = 1.0
+2026-05-06 23:15:25,321 - col 1: n_pp = 2, n_and = 2, n_ha = 1, n_fa = 0, col_cost = 3.822
+2026-05-06 23:15:25,321 - col 2: n_pp = 3, n_and = 3, n_ha = 1, n_fa = 1, col_cost = 9.292
+2026-05-06 23:15:25,321 - col 3: n_pp = 4, n_and = 4, n_ha = 1, n_fa = 2, col_cost = 14.762
+2026-05-06 23:15:25,321 - col 4: n_pp = 5, n_and = 5, n_ha = 1, n_fa = 3, col_cost = 20.232
+2026-05-06 23:15:25,321 - col 5: n_pp = 6, n_and = 6, n_ha = 1, n_fa = 4, col_cost = 25.701999999999998
+2026-05-06 23:15:25,321 - col 6: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 5, col_cost = 31.171999999999997
+2026-05-06 23:15:25,321 - col 7: n_pp = 8, n_and = 8, n_ha = 1, n_fa = 6, col_cost = 36.641999999999996
+2026-05-06 23:15:25,321 - col 8: n_pp = 7, n_and = 7, n_ha = 1, n_fa = 6, col_cost = 35.641999999999996
+2026-05-06 23:15:25,321 - col 9: n_pp = 6, n_and = 6, n_ha = 0, n_fa = 6, col_cost = 32.82
+2026-05-06 23:15:25,321 - col 10: n_pp = 5, n_and = 5, n_ha = 0, n_fa = 5, col_cost = 27.349999999999998
+2026-05-06 23:15:25,321 - col 11: n_pp = 4, n_and = 4, n_ha = 0, n_fa = 4, col_cost = 21.88
+2026-05-06 23:15:25,321 - col 12: n_pp = 3, n_and = 3, n_ha = 0, n_fa = 3, col_cost = 16.41
+2026-05-06 23:15:25,321 - col 13: n_pp = 2, n_and = 2, n_ha = 0, n_fa = 2, col_cost = 10.94
+2026-05-06 23:15:25,321 - col 14: n_pp = 1, n_and = 1, n_ha = 0, n_fa = 1, col_cost = 5.47
+2026-05-06 23:15:25,321 - Total compressors: HA = 8, FA = 48
+2026-05-06 23:15:25,322 - Layer 20: power_per_mul = 0.9014927744865417
+2026-05-06 23:15:25,322 - layer_id = 20, gamma_free = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,322 - layer_id = 20, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.000000', '  0.000000', '  0.000000', '  0.000000']
+2026-05-06 23:15:25,323 - q_model (before phase1): (acc@1, loss1, loss2, total_loss) = (0.8983999490737915, 0.3562459945678711, 0.9014928936958313, 0.6266938626766205)
+2026-05-06 23:15:25,323 - optimizer: SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    lr: 0.0005
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0.0005
+)
+2026-05-06 23:15:25,323 - AppTrain Epoch 0: Learning rate: 0.0005
+2026-05-06 23:15:52,150 - Train Epoch 0: [12800/50000]	loss1: 0.04111871123313904	loss2: 0.8999463319778442	loss: 0.31110262870788574
+2026-05-06 23:16:17,876 - Train Epoch 0: [25600/50000]	loss1: 0.06291241943836212	loss2: 0.8978834748268127	loss: 0.33227747678756714
+2026-05-06 23:16:43,734 - Train Epoch 0: [38400/50000]	loss1: 0.03345508128404617	loss2: 0.8959869146347046	loss: 0.3022511601448059
+2026-05-06 23:17:07,293 - Train Epoch 0: [50000/50000]	loss1: 0.07372400164604187	loss2: 0.8939733505249023	loss: 0.341916024684906
+2026-05-06 23:17:23,424 - Layer 0: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,425 - layer_id =  0, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,425 - layer_id =  0, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,426 - Layer 1: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,427 - layer_id =  1, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,427 - layer_id =  1, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,428 - Layer 2: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,428 - layer_id =  2, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,429 - layer_id =  2, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,430 - Layer 3: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,430 - layer_id =  3, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,431 - layer_id =  3, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,431 - Layer 4: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,432 - layer_id =  4, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,432 - layer_id =  4, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,433 - Layer 5: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,434 - layer_id =  5, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,434 - layer_id =  5, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,435 - Layer 6: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,435 - layer_id =  6, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,436 - layer_id =  6, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,437 - Layer 7: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,437 - layer_id =  7, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,438 - layer_id =  7, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,438 - Layer 8: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,439 - layer_id =  8, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,440 - layer_id =  8, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,440 - Layer 9: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,441 - layer_id =  9, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,441 - layer_id =  9, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,441 - Layer 10: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,442 - layer_id = 10, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,442 - layer_id = 10, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,442 - Layer 11: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,443 - layer_id = 11, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,443 - layer_id = 11, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,443 - Layer 12: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,444 - layer_id = 12, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,444 - layer_id = 12, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,445 - Layer 13: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,445 - layer_id = 13, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,445 - layer_id = 13, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,446 - Layer 14: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,446 - layer_id = 14, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,446 - layer_id = 14, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,446 - Layer 15: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,447 - layer_id = 15, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,447 - layer_id = 15, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,447 - Layer 16: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,448 - layer_id = 16, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,448 - layer_id = 16, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,448 - Layer 17: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,449 - layer_id = 17, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,449 - layer_id = 17, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,449 - Layer 18: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,449 - layer_id = 18, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,450 - layer_id = 18, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,450 - Layer 19: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,450 - layer_id = 19, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,451 - layer_id = 19, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,451 - Layer 20: power_per_mul = 0.8939216732978821
+2026-05-06 23:17:23,451 - layer_id = 20, gamma_free = ['  1.000456', '  1.003055', '  1.008039', '  1.012681', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,452 - layer_id = 20, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.017188', '  0.020244', '  0.021188', '  0.018854']
+2026-05-06 23:17:23,452 - (acc@1, loss1, loss2, total_loss) = (0.9212999939918518, 0.2817160487174988, 0.8939218521118164, 0.5498926043510437)
+2026-05-06 23:17:23,452 - Elapsed 118.13s, 118.13 s/epoch, 0.60 s/batch, ets 1063.16s
+
+2026-05-06 23:17:23,453 - AppTrain Epoch 1: Learning rate: 0.0005
+2026-05-06 23:17:49,532 - Train Epoch 1: [12800/50000]	loss1: 0.04346013069152832	loss2: 0.892193615436554	loss: 0.3111182153224945
+2026-05-06 23:18:15,431 - Train Epoch 1: [25600/50000]	loss1: 0.050088267773389816	loss2: 0.8901932835578918	loss: 0.3171462416648865
+2026-05-06 23:18:41,466 - Train Epoch 1: [38400/50000]	loss1: 0.08242937177419662	loss2: 0.8881722092628479	loss: 0.3488810658454895
+2026-05-06 23:19:04,952 - Train Epoch 1: [50000/50000]	loss1: 0.041438616812229156	loss2: 0.8864116072654724	loss: 0.3073621094226837
+2026-05-06 23:19:21,159 - Layer 0: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,159 - layer_id =  0, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,159 - layer_id =  0, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,160 - Layer 1: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,160 - layer_id =  1, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,161 - layer_id =  1, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,161 - Layer 2: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,161 - layer_id =  2, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,162 - layer_id =  2, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,162 - Layer 3: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,162 - layer_id =  3, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,163 - layer_id =  3, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,163 - Layer 4: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,163 - layer_id =  4, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,164 - layer_id =  4, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,164 - Layer 5: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,164 - layer_id =  5, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,165 - layer_id =  5, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,165 - Layer 6: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,165 - layer_id =  6, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,166 - layer_id =  6, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,166 - Layer 7: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,166 - layer_id =  7, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,167 - layer_id =  7, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,167 - Layer 8: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,168 - layer_id =  8, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,168 - layer_id =  8, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,168 - Layer 9: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,169 - layer_id =  9, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,169 - layer_id =  9, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,170 - Layer 10: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,170 - layer_id = 10, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,170 - layer_id = 10, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,171 - Layer 11: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,171 - layer_id = 11, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,171 - layer_id = 11, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,172 - Layer 12: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,172 - layer_id = 12, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,172 - layer_id = 12, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,173 - Layer 13: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,173 - layer_id = 13, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,173 - layer_id = 13, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,174 - Layer 14: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,174 - layer_id = 14, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,174 - layer_id = 14, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,175 - Layer 15: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,175 - layer_id = 15, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,175 - layer_id = 15, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,176 - Layer 16: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,176 - layer_id = 16, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,176 - layer_id = 16, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,177 - Layer 17: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,177 - layer_id = 17, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,177 - layer_id = 17, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,178 - Layer 18: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,178 - layer_id = 18, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,178 - layer_id = 18, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,179 - Layer 19: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,179 - layer_id = 19, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,180 - layer_id = 19, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,180 - Layer 20: power_per_mul = 0.8863813281059265
+2026-05-06 23:19:21,180 - layer_id = 20, gamma_free = ['  1.000933', '  1.006252', '  1.016445', '  1.025924', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,181 - layer_id = 20, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.035092', '  0.041153', '  0.042399', '  0.036581']
+2026-05-06 23:19:21,181 - (acc@1, loss1, loss2, total_loss) = (0.9192999601364136, 0.2889387309551239, 0.8863812685012817, 0.5548531115055084)
+2026-05-06 23:19:21,181 - Elapsed 235.86s, 117.93 s/epoch, 0.60 s/batch, ets 943.43s
+
+2026-05-06 23:19:21,182 - AppTrain Epoch 2: Learning rate: 0.0005
+2026-05-06 23:19:47,393 - Train Epoch 2: [12800/50000]	loss1: 0.064218670129776	loss2: 0.8845082521438599	loss: 0.3295711576938629
+2026-05-06 23:20:13,345 - Train Epoch 2: [25600/50000]	loss1: 0.03551986813545227	loss2: 0.8825517296791077	loss: 0.3002853989601135
+2026-05-06 23:20:39,301 - Train Epoch 2: [38400/50000]	loss1: 0.05764852836728096	loss2: 0.8805733323097229	loss: 0.32182055711746216
+2026-05-06 23:21:02,912 - Train Epoch 2: [50000/50000]	loss1: 0.023181471973657608	loss2: 0.8788247108459473	loss: 0.2868289053440094
+2026-05-06 23:21:19,122 - Layer 0: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,123 - layer_id =  0, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,124 - layer_id =  0, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,124 - Layer 1: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,125 - layer_id =  1, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,126 - layer_id =  1, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,127 - Layer 2: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,127 - layer_id =  2, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,128 - layer_id =  2, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,129 - Layer 3: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,129 - layer_id =  3, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,130 - layer_id =  3, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,130 - Layer 4: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,131 - layer_id =  4, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,132 - layer_id =  4, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,132 - Layer 5: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,133 - layer_id =  5, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,133 - layer_id =  5, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,134 - Layer 6: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,135 - layer_id =  6, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,135 - layer_id =  6, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,136 - Layer 7: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,137 - layer_id =  7, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,137 - layer_id =  7, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,138 - Layer 8: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,139 - layer_id =  8, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,139 - layer_id =  8, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,140 - Layer 9: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,140 - layer_id =  9, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,141 - layer_id =  9, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,142 - Layer 10: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,142 - layer_id = 10, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,143 - layer_id = 10, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,144 - Layer 11: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,144 - layer_id = 11, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,145 - layer_id = 11, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,145 - Layer 12: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,146 - layer_id = 12, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,148 - layer_id = 12, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,148 - Layer 13: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,149 - layer_id = 13, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,150 - layer_id = 13, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,150 - Layer 14: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,151 - layer_id = 14, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,152 - layer_id = 14, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,152 - Layer 15: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,153 - layer_id = 15, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,153 - layer_id = 15, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,154 - Layer 16: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,154 - layer_id = 16, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,155 - layer_id = 16, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,155 - Layer 17: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,156 - layer_id = 17, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,156 - layer_id = 17, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,156 - Layer 18: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,157 - layer_id = 18, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,157 - layer_id = 18, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,157 - Layer 19: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,158 - layer_id = 19, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,158 - layer_id = 19, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,158 - Layer 20: power_per_mul = 0.8787925243377686
+2026-05-06 23:21:19,159 - layer_id = 20, gamma_free = ['  1.001410', '  1.009459', '  1.024861', '  1.039197', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,159 - layer_id = 20, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.053002', '  0.062007', '  0.063667', '  0.054681']
+2026-05-06 23:21:19,160 - (acc@1, loss1, loss2, total_loss) = (0.9199000000953674, 0.3037740886211395, 0.878792405128479, 0.5674118101596832)
+2026-05-06 23:21:19,160 - Elapsed 353.84s, 117.95 s/epoch, 0.60 s/batch, ets 825.62s
+
+2026-05-06 23:21:19,160 - AppTrain Epoch 3: Learning rate: 0.0005
+2026-05-06 23:21:45,218 - Train Epoch 3: [12800/50000]	loss1: 0.05538273975253105	loss2: 0.8768264651298523	loss: 0.31843069195747375
+2026-05-06 23:22:11,090 - Train Epoch 3: [25600/50000]	loss1: 0.04609827697277069	loss2: 0.8752292394638062	loss: 0.30866706371307373
+2026-05-06 23:22:37,062 - Train Epoch 3: [38400/50000]	loss1: 0.03872097283601761	loss2: 0.8732635974884033	loss: 0.3007000684738159
+2026-05-06 23:23:00,628 - Train Epoch 3: [50000/50000]	loss1: 0.045005932450294495	loss2: 0.8714085221290588	loss: 0.3064284920692444
+2026-05-06 23:23:16,856 - Layer 0: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,856 - layer_id =  0, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,857 - layer_id =  0, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,857 - Layer 1: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,858 - layer_id =  1, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,858 - layer_id =  1, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,858 - Layer 2: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,859 - layer_id =  2, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,859 - layer_id =  2, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,860 - Layer 3: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,860 - layer_id =  3, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,860 - layer_id =  3, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,861 - Layer 4: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,861 - layer_id =  4, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,861 - layer_id =  4, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,862 - Layer 5: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,862 - layer_id =  5, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,863 - layer_id =  5, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,863 - Layer 6: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,863 - layer_id =  6, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,864 - layer_id =  6, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,864 - Layer 7: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,865 - layer_id =  7, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,865 - layer_id =  7, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,865 - Layer 8: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,866 - layer_id =  8, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,866 - layer_id =  8, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,866 - Layer 9: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,867 - layer_id =  9, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,867 - layer_id =  9, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,867 - Layer 10: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,868 - layer_id = 10, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,868 - layer_id = 10, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,868 - Layer 11: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,869 - layer_id = 11, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,869 - layer_id = 11, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,870 - Layer 12: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,870 - layer_id = 12, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,870 - layer_id = 12, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,871 - Layer 13: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,871 - layer_id = 13, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,872 - layer_id = 13, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,872 - Layer 14: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,872 - layer_id = 14, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,873 - layer_id = 14, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,873 - Layer 15: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,873 - layer_id = 15, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,874 - layer_id = 15, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,874 - Layer 16: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,874 - layer_id = 16, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,875 - layer_id = 16, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,875 - Layer 17: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,876 - layer_id = 17, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,876 - layer_id = 17, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,876 - Layer 18: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,876 - layer_id = 18, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,877 - layer_id = 18, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,877 - Layer 19: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,877 - layer_id = 19, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,878 - layer_id = 19, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,878 - Layer 20: power_per_mul = 0.8713737726211548
+2026-05-06 23:23:16,879 - layer_id = 20, gamma_free = ['  1.001885', '  1.012653', '  1.033251', '  1.052427', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,879 - layer_id = 20, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.070857', '  0.082685', '  0.084544', '  0.071907']
+2026-05-06 23:23:16,879 - (acc@1, loss1, loss2, total_loss) = (0.9217999577522278, 0.29514607787132263, 0.8713739514350891, 0.5565582633018493)
+2026-05-06 23:23:16,880 - Elapsed 471.56s, 117.89 s/epoch, 0.60 s/batch, ets 707.33s
+
+2026-05-06 23:23:16,880 - AppTrain Epoch 4: Learning rate: 0.0005
+2026-05-06 23:23:43,010 - Train Epoch 4: [12800/50000]	loss1: 0.032669730484485626	loss2: 0.8697318434715271	loss: 0.2935892939567566
+2026-05-06 23:24:08,974 - Train Epoch 4: [25600/50000]	loss1: 0.04418637603521347	loss2: 0.8674773573875427	loss: 0.3044295907020569
+2026-05-06 23:24:34,936 - Train Epoch 4: [38400/50000]	loss1: 0.024423405528068542	loss2: 0.8653579354286194	loss: 0.2840307950973511
+2026-05-06 23:24:58,829 - Train Epoch 4: [50000/50000]	loss1: 0.03124934993684292	loss2: 0.8639642000198364	loss: 0.29043862223625183
+2026-05-06 23:25:15,097 - Layer 0: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,098 - layer_id =  0, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,098 - layer_id =  0, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,098 - Layer 1: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,099 - layer_id =  1, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,099 - layer_id =  1, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,099 - Layer 2: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,100 - layer_id =  2, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,100 - layer_id =  2, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,100 - Layer 3: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,101 - layer_id =  3, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,101 - layer_id =  3, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,101 - Layer 4: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,101 - layer_id =  4, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,102 - layer_id =  4, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,102 - Layer 5: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,102 - layer_id =  5, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,103 - layer_id =  5, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,103 - Layer 6: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,103 - layer_id =  6, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,104 - layer_id =  6, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,104 - Layer 7: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,104 - layer_id =  7, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,105 - layer_id =  7, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,105 - Layer 8: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,105 - layer_id =  8, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,105 - layer_id =  8, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,106 - Layer 9: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,106 - layer_id =  9, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,106 - layer_id =  9, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,107 - Layer 10: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,107 - layer_id = 10, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,107 - layer_id = 10, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,108 - Layer 11: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,108 - layer_id = 11, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,108 - layer_id = 11, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,108 - Layer 12: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,109 - layer_id = 12, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,109 - layer_id = 12, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,109 - Layer 13: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,110 - layer_id = 13, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,110 - layer_id = 13, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,110 - Layer 14: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,110 - layer_id = 14, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,111 - layer_id = 14, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,111 - Layer 15: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,111 - layer_id = 15, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,112 - layer_id = 15, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,112 - Layer 16: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,112 - layer_id = 16, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,113 - layer_id = 16, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,113 - Layer 17: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,113 - layer_id = 17, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,113 - layer_id = 17, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,114 - Layer 18: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,114 - layer_id = 18, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,114 - layer_id = 18, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,115 - Layer 19: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,115 - layer_id = 19, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,115 - layer_id = 19, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,116 - Layer 20: power_per_mul = 0.8639337420463562
+2026-05-06 23:25:15,116 - layer_id = 20, gamma_free = ['  1.002357', '  1.015840', '  1.041618', '  1.065612', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,116 - layer_id = 20, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.088649', '  0.103318', '  0.105284', '  0.089486']
+2026-05-06 23:25:15,117 - (acc@1, loss1, loss2, total_loss) = (0.9159999489784241, 0.3149799704551697, 0.863933801651001, 0.5741601109504699)
+2026-05-06 23:25:15,117 - Elapsed 589.79s, 117.96 s/epoch, 0.60 s/batch, ets 589.79s
+
+2026-05-06 23:25:15,117 - AppTrain Epoch 5: Learning rate: 0.0005
+2026-05-06 23:25:41,424 - Train Epoch 5: [12800/50000]	loss1: 0.042807552963495255	loss2: 0.862305760383606	loss: 0.30149927735328674
+2026-05-06 23:26:07,574 - Train Epoch 5: [25600/50000]	loss1: 0.04189618304371834	loss2: 0.8606650233268738	loss: 0.30009570717811584
+2026-05-06 23:26:33,646 - Train Epoch 5: [38400/50000]	loss1: 0.04306768998503685	loss2: 0.8588798642158508	loss: 0.3007316589355469
+2026-05-06 23:26:57,215 - Train Epoch 5: [50000/50000]	loss1: 0.05214910954236984	loss2: 0.8577815294265747	loss: 0.3094835877418518
+2026-05-06 23:27:13,470 - Layer 0: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,470 - layer_id =  0, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,471 - layer_id =  0, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,471 - Layer 1: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,471 - layer_id =  1, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,472 - layer_id =  1, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,472 - Layer 2: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,472 - layer_id =  2, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,473 - layer_id =  2, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,473 - Layer 3: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,473 - layer_id =  3, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,474 - layer_id =  3, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,474 - Layer 4: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,474 - layer_id =  4, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,475 - layer_id =  4, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,475 - Layer 5: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,475 - layer_id =  5, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,476 - layer_id =  5, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,476 - Layer 6: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,476 - layer_id =  6, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,477 - layer_id =  6, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,477 - Layer 7: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,477 - layer_id =  7, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,478 - layer_id =  7, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,478 - Layer 8: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,478 - layer_id =  8, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,479 - layer_id =  8, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,479 - Layer 9: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,479 - layer_id =  9, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,480 - layer_id =  9, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,480 - Layer 10: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,481 - layer_id = 10, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,481 - layer_id = 10, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,481 - Layer 11: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,482 - layer_id = 11, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,482 - layer_id = 11, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,483 - Layer 12: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,483 - layer_id = 12, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,483 - layer_id = 12, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,484 - Layer 13: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,484 - layer_id = 13, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,485 - layer_id = 13, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,485 - Layer 14: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,485 - layer_id = 14, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,486 - layer_id = 14, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,486 - Layer 15: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,486 - layer_id = 15, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,487 - layer_id = 15, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,487 - Layer 16: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,488 - layer_id = 16, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,488 - layer_id = 16, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,488 - Layer 17: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,489 - layer_id = 17, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,489 - layer_id = 17, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,490 - Layer 18: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,490 - layer_id = 18, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,490 - layer_id = 18, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,491 - Layer 19: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,491 - layer_id = 19, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,492 - layer_id = 19, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,492 - Layer 20: power_per_mul = 0.8577613830566406
+2026-05-06 23:27:13,492 - layer_id = 20, gamma_free = ['  1.002825', '  1.018994', '  1.049875', '  1.078541', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,493 - layer_id = 20, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.105781', '  0.122408', '  0.123271', '  0.100713']
+2026-05-06 23:27:13,493 - (acc@1, loss1, loss2, total_loss) = (0.9170999526977539, 0.3130892217159271, 0.8577612638473511, 0.5704176008701325)
+2026-05-06 23:27:13,493 - Elapsed 708.17s, 118.03 s/epoch, 0.60 s/batch, ets 472.11s
+
+2026-05-06 23:27:13,493 - AppTrain Epoch 6: Learning rate: 0.0005
+2026-05-06 23:27:39,877 - Train Epoch 6: [12800/50000]	loss1: 0.05736750364303589	loss2: 0.8556254506111145	loss: 0.3140551447868347
+2026-05-06 23:28:05,888 - Train Epoch 6: [25600/50000]	loss1: 0.04016721621155739	loss2: 0.8541678786277771	loss: 0.29641759395599365
+2026-05-06 23:28:31,900 - Train Epoch 6: [38400/50000]	loss1: 0.043587639927864075	loss2: 0.8524124026298523	loss: 0.29931139945983887
+2026-05-06 23:28:55,635 - Train Epoch 6: [50000/50000]	loss1: 0.12041646242141724	loss2: 0.8509023785591125	loss: 0.3756871819496155
+2026-05-06 23:29:11,866 - Layer 0: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,866 - layer_id =  0, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,867 - layer_id =  0, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,867 - Layer 1: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,867 - layer_id =  1, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,868 - layer_id =  1, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,868 - Layer 2: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,869 - layer_id =  2, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,869 - layer_id =  2, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,869 - Layer 3: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,870 - layer_id =  3, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,870 - layer_id =  3, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,870 - Layer 4: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,871 - layer_id =  4, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,871 - layer_id =  4, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,872 - Layer 5: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,872 - layer_id =  5, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,872 - layer_id =  5, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,873 - Layer 6: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,873 - layer_id =  6, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,874 - layer_id =  6, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,874 - Layer 7: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,874 - layer_id =  7, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,875 - layer_id =  7, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,875 - Layer 8: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,875 - layer_id =  8, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,876 - layer_id =  8, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,876 - Layer 9: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,876 - layer_id =  9, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,877 - layer_id =  9, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,877 - Layer 10: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,878 - layer_id = 10, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,878 - layer_id = 10, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,878 - Layer 11: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,879 - layer_id = 11, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,879 - layer_id = 11, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,879 - Layer 12: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,880 - layer_id = 12, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,880 - layer_id = 12, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,880 - Layer 13: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,881 - layer_id = 13, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,881 - layer_id = 13, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,881 - Layer 14: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,882 - layer_id = 14, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,882 - layer_id = 14, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,882 - Layer 15: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,883 - layer_id = 15, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,883 - layer_id = 15, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,883 - Layer 16: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,884 - layer_id = 16, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,884 - layer_id = 16, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,885 - Layer 17: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,885 - layer_id = 17, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,885 - layer_id = 17, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,886 - Layer 18: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,886 - layer_id = 18, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,886 - layer_id = 18, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,887 - Layer 19: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,887 - layer_id = 19, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,887 - layer_id = 19, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,888 - Layer 20: power_per_mul = 0.8508959412574768
+2026-05-06 23:29:11,888 - layer_id = 20, gamma_free = ['  1.003294', '  1.022160', '  1.058192', '  1.091609', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,889 - layer_id = 20, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.123246', '  0.142473', '  0.142683', '  0.115406']
+2026-05-06 23:29:11,889 - (acc@1, loss1, loss2, total_loss) = (0.9170999526977539, 0.3144083023071289, 0.8508960604667664, 0.5696771204471588)
+2026-05-06 23:29:11,889 - Elapsed 826.57s, 118.08 s/epoch, 0.60 s/batch, ets 354.24s
+
+2026-05-06 23:29:11,889 - AppTrain Epoch 7: Learning rate: 0.0005
+2026-05-06 23:29:38,037 - Train Epoch 7: [12800/50000]	loss1: 0.028406398370862007	loss2: 0.8493602871894836	loss: 0.2832145094871521
+2026-05-06 23:30:03,837 - Train Epoch 7: [25600/50000]	loss1: 0.026885269209742546	loss2: 0.8473741412162781	loss: 0.28109753131866455
+2026-05-06 23:30:29,855 - Train Epoch 7: [38400/50000]	loss1: 0.019944509491324425	loss2: 0.8457008600234985	loss: 0.2736547887325287
+2026-05-06 23:30:53,367 - Train Epoch 7: [50000/50000]	loss1: 0.10398668050765991	loss2: 0.8448400497436523	loss: 0.35743871331214905
+2026-05-06 23:31:09,613 - Layer 0: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,614 - layer_id =  0, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,614 - layer_id =  0, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,614 - Layer 1: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,615 - layer_id =  1, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,615 - layer_id =  1, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,615 - Layer 2: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,616 - layer_id =  2, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,616 - layer_id =  2, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,616 - Layer 3: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,617 - layer_id =  3, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,617 - layer_id =  3, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,617 - Layer 4: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,618 - layer_id =  4, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,618 - layer_id =  4, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,618 - Layer 5: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,619 - layer_id =  5, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,619 - layer_id =  5, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,620 - Layer 6: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,620 - layer_id =  6, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,620 - layer_id =  6, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,621 - Layer 7: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,621 - layer_id =  7, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,621 - layer_id =  7, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,622 - Layer 8: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,622 - layer_id =  8, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,622 - layer_id =  8, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,623 - Layer 9: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,623 - layer_id =  9, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,623 - layer_id =  9, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,624 - Layer 10: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,624 - layer_id = 10, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,624 - layer_id = 10, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,625 - Layer 11: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,625 - layer_id = 11, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,625 - layer_id = 11, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,626 - Layer 12: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,626 - layer_id = 12, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,626 - layer_id = 12, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,627 - Layer 13: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,627 - layer_id = 13, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,627 - layer_id = 13, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,628 - Layer 14: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,628 - layer_id = 14, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,628 - layer_id = 14, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,629 - Layer 15: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,629 - layer_id = 15, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,629 - layer_id = 15, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,630 - Layer 16: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,630 - layer_id = 16, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,630 - layer_id = 16, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,631 - Layer 17: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,631 - layer_id = 17, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,631 - layer_id = 17, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,632 - Layer 18: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,632 - layer_id = 18, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,632 - layer_id = 18, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,633 - Layer 19: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,633 - layer_id = 19, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,633 - layer_id = 19, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,634 - Layer 20: power_per_mul = 0.8448085784912109
+2026-05-06 23:31:09,634 - layer_id = 20, gamma_free = ['  1.003759', '  1.025312', '  1.066463', '  1.104498', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,634 - layer_id = 20, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.140350', '  0.161627', '  0.160366', '  0.126183']
+2026-05-06 23:31:09,635 - (acc@1, loss1, loss2, total_loss) = (0.920799970626831, 0.3026115894317627, 0.8448085188865662, 0.5560541450977325)
+2026-05-06 23:31:09,635 - Elapsed 944.31s, 118.04 s/epoch, 0.60 s/batch, ets 236.08s
+
+2026-05-06 23:31:09,635 - AppTrain Epoch 8: Learning rate: 0.0005
+2026-05-06 23:31:35,774 - Train Epoch 8: [12800/50000]	loss1: 0.06047584488987923	loss2: 0.8433157205581665	loss: 0.3134705722332001
+2026-05-06 23:32:01,701 - Train Epoch 8: [25600/50000]	loss1: 0.04359328746795654	loss2: 0.8419430255889893	loss: 0.2961761951446533
+2026-05-06 23:32:27,495 - Train Epoch 8: [38400/50000]	loss1: 0.02128463238477707	loss2: 0.8400953412055969	loss: 0.2733132541179657
+2026-05-06 23:32:51,086 - Train Epoch 8: [50000/50000]	loss1: 0.08232609927654266	loss2: 0.8386654853820801	loss: 0.3339257836341858
+2026-05-06 23:33:07,268 - Layer 0: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,268 - layer_id =  0, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,268 - layer_id =  0, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,269 - Layer 1: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,269 - layer_id =  1, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,270 - layer_id =  1, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,270 - Layer 2: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,270 - layer_id =  2, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,271 - layer_id =  2, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,271 - Layer 3: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,271 - layer_id =  3, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,272 - layer_id =  3, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,272 - Layer 4: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,273 - layer_id =  4, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,273 - layer_id =  4, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,273 - Layer 5: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,274 - layer_id =  5, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,274 - layer_id =  5, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,274 - Layer 6: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,275 - layer_id =  6, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,275 - layer_id =  6, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,276 - Layer 7: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,276 - layer_id =  7, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,276 - layer_id =  7, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,277 - Layer 8: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,277 - layer_id =  8, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,278 - layer_id =  8, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,278 - Layer 9: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,278 - layer_id =  9, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,279 - layer_id =  9, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,279 - Layer 10: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,279 - layer_id = 10, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,280 - layer_id = 10, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,280 - Layer 11: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,280 - layer_id = 11, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,281 - layer_id = 11, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,281 - Layer 12: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,281 - layer_id = 12, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,282 - layer_id = 12, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,282 - Layer 13: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,282 - layer_id = 13, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,283 - layer_id = 13, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,283 - Layer 14: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,284 - layer_id = 14, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,284 - layer_id = 14, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,284 - Layer 15: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,285 - layer_id = 15, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,285 - layer_id = 15, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,285 - Layer 16: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,286 - layer_id = 16, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,286 - layer_id = 16, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,287 - Layer 17: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,287 - layer_id = 17, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,287 - layer_id = 17, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,288 - Layer 18: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,288 - layer_id = 18, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,288 - layer_id = 18, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,289 - Layer 19: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,289 - layer_id = 19, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,290 - layer_id = 19, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,290 - Layer 20: power_per_mul = 0.8386308550834656
+2026-05-06 23:33:07,290 - layer_id = 20, gamma_free = ['  1.004222', '  1.028448', '  1.074710', '  1.117336', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,291 - layer_id = 20, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.157323', '  0.180735', '  0.178006', '  0.137822']
+2026-05-06 23:33:07,291 - (acc@1, loss1, loss2, total_loss) = (0.9124999642372131, 0.3209741711616516, 0.8386308550834656, 0.5725634276866913)
+2026-05-06 23:33:07,291 - Elapsed 1061.97s, 118.00 s/epoch, 0.60 s/batch, ets 118.00s
+
+2026-05-06 23:33:07,291 - AppTrain Epoch 9: Learning rate: 0.0005
+2026-05-06 23:33:33,626 - Train Epoch 9: [12800/50000]	loss1: 0.10261571407318115	loss2: 0.837492048740387	loss: 0.35386332869529724
+2026-05-06 23:33:59,731 - Train Epoch 9: [25600/50000]	loss1: 0.05828310549259186	loss2: 0.8361561298370361	loss: 0.3091299533843994
+2026-05-06 23:34:25,564 - Train Epoch 9: [38400/50000]	loss1: 0.04212377965450287	loss2: 0.834318995475769	loss: 0.2924194931983948
+2026-05-06 23:34:49,112 - Train Epoch 9: [50000/50000]	loss1: 0.07525654137134552	loss2: 0.8328968286514282	loss: 0.3251256048679352
+2026-05-06 23:35:05,286 - Layer 0: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,286 - layer_id =  0, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,287 - layer_id =  0, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,287 - Layer 1: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,287 - layer_id =  1, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,288 - layer_id =  1, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,288 - Layer 2: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,289 - layer_id =  2, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,289 - layer_id =  2, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,289 - Layer 3: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,290 - layer_id =  3, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,290 - layer_id =  3, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,290 - Layer 4: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,291 - layer_id =  4, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,291 - layer_id =  4, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,291 - Layer 5: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,292 - layer_id =  5, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,292 - layer_id =  5, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,292 - Layer 6: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,293 - layer_id =  6, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,293 - layer_id =  6, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,293 - Layer 7: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,294 - layer_id =  7, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,294 - layer_id =  7, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,294 - Layer 8: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,295 - layer_id =  8, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,295 - layer_id =  8, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,295 - Layer 9: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,296 - layer_id =  9, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,296 - layer_id =  9, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,296 - Layer 10: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,297 - layer_id = 10, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,297 - layer_id = 10, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,297 - Layer 11: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,298 - layer_id = 11, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,298 - layer_id = 11, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,299 - Layer 12: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,299 - layer_id = 12, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,299 - layer_id = 12, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,299 - Layer 13: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,300 - layer_id = 13, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,300 - layer_id = 13, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,301 - Layer 14: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,301 - layer_id = 14, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,301 - layer_id = 14, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,302 - Layer 15: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,302 - layer_id = 15, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,302 - layer_id = 15, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,303 - Layer 16: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,303 - layer_id = 16, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,303 - layer_id = 16, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,304 - Layer 17: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,304 - layer_id = 17, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,304 - layer_id = 17, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,305 - Layer 18: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,305 - layer_id = 18, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,305 - layer_id = 18, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,306 - Layer 19: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,306 - layer_id = 19, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,306 - layer_id = 19, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,307 - Layer 20: power_per_mul = 0.8328676819801331
+2026-05-06 23:35:05,307 - layer_id = 20, gamma_free = ['  1.004685', '  1.031587', '  1.082960', '  1.130149', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,307 - layer_id = 20, gamma      = ['  1.000000', '  1.000000', '  1.000000', '  1.000000', '  0.174248', '  0.199563', '  0.194773', '  0.147112']
+2026-05-06 23:35:05,308 - (acc@1, loss1, loss2, total_loss) = (0.9102999567985535, 0.3339448869228363, 0.8328676819801331, 0.5838051915168763)
+2026-05-06 23:35:05,308 - Elapsed 1179.98s, 118.00 s/epoch, 0.60 s/batch, ets 0.00s
+
+2026-05-06 23:35:05,308 - saving phase 1 model to /home/chang/Work/Prev/TRAM-public/demo_resnet18_cifar10_results/resnet18_w8a8_lbd0.3_phase1.pth ...
